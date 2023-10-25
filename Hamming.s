@@ -400,7 +400,7 @@ EncodeHammingCode357:
     # check if 3 is 1 with xor    
     add $t1, $t1, 2
     lb $t4, 0($t1)
-    # check if 3 is 1 with xor
+    # check if 2 is 1 with xor
     xor $t2, $t4, $t2
     # Flip it
     xor $t2, $t2, $t3
@@ -421,10 +421,10 @@ EncodeHammingCode357:
     lb $t4, 0($t1)
     # check if 6 is 1 with xor
     xor $t2, $t4, $t2
-    # check if 3 is 1 with xor    
+    # check if 5 is 1 with xor    
     add $t1, $t1, 1
     lb $t4, 0($t1)
-    # check if 3 is 1 with xor
+    # check if 4 is 1 with xor
     xor $t2, $t4, $t2
     # Flip it
     xor $t2, $t2, $t3
